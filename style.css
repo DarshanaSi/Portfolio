@@ -580,7 +580,7 @@ section.active {
   }
 
   #my-work h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .img-work-container {
@@ -596,8 +596,16 @@ section.active {
     scale: 1.125;
   }
   .work h3 {
-    font-size: 1.25rem;
-    padding: 0.5rem;
+    font-size: 1rem;
+    padding: 0.25rem;
+    background-color: var(--resume-background-color);
+    border-radius: 0.25rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .work a:hover {
+    color: var(--background-color);
   }
   .work a {
     color: var(--home-text-color);
@@ -610,7 +618,7 @@ section.active {
   .youtube-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 0.25rem;
+    row-gap: 0.125rem;
     column-gap: 2rem;
   }
 
@@ -618,7 +626,7 @@ section.active {
     font-size: 0.7rem;
   }
   .youtube-container img {
-    height: 5rem;
+    height: 4.8rem;
   }
   #books-image {
     width: 50%;
@@ -780,7 +788,7 @@ section.active {
     font-size: 1.25rem;
   }
   #my-work h2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .img-work-container {
@@ -796,9 +804,18 @@ section.active {
   .img-work-container img:hover {
     scale: 1.2;
   }
+
   .work h3 {
-    font-size: 1.5rem;
-    padding: 0.75rem;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    background-color: var(--resume-background-color);
+    border-radius: 2rem;
+    margin-top: 1.7rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .work a:hover {
+    color: var(--background-color);
   }
   .work a {
     color: var(--home-text-color);
@@ -969,7 +986,7 @@ section.active {
   }
 
   #my-work h2 {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 
   .img-work-container {
@@ -978,18 +995,22 @@ section.active {
     gap: 3rem;
   }
   .img-work-container img {
-    height: 38rem;
+    height: 35rem;
   }
   .img-work-container img:hover {
     scale: 1.1;
   }
   .work h3 {
-    font-size: 2rem;
+    font-size: 1.25rem;
     padding: 0.5rem;
     background-color: var(--resume-background-color);
     border-radius: 2rem;
     margin-top: 1.7rem;
     margin-bottom: 0.2rem;
+  }
+
+  .work a:hover {
+    color: var(--background-color);
   }
   .work a {
     color: var(--home-text-color);
