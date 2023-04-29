@@ -1,0 +1,1315 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background-color: #1c1a30;
+  --home-text-color: white;
+  --drop-down: white;
+  --drop-down-content: black;
+  --drop-down-hover: rgb(130, 132, 139);
+  --resume-button-color: black;
+  --darshana-home: red;
+  --list-border: var(--background-color);
+  --resume-background-color: rgba(211, 208, 222, 0.5);
+}
+
+a {
+  color: var(--home-text-color);
+  text-decoration: none;
+}
+
+nav a.active,
+nav a:hover {
+  color: var(--home-text-color);
+  background-color: var(--background-color);
+}
+.header {
+  justify-content: flex-end;
+  background: var(--background-color);
+  color: var(--home-text-color);
+  display: flex;
+}
+
+.nav_top {
+  display: flex;
+  align-content: baseline;
+}
+#name {
+  color: var(--darshana-home);
+}
+.description {
+  background-color: var(--resume-background-color);
+  color: var(--home-text-color);
+  padding: 1rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  border-radius: 1rem;
+}
+
+.container a {
+  color: var(--home-text-color);
+}
+
+.container a:hover {
+  color: var(--background-color);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 0.1rem;
+}
+
+.options {
+  padding: 1rem;
+  background-color: var(--resume-background-color);
+  border-radius: 1rem;
+}
+#travel h2 {
+}
+
+.go-to-hobbies {
+  width: 15rem;
+  height: 2rem;
+  border-radius: 1rem;
+}
+
+.go-to-hobbies a {
+  text-decoration: none;
+  color: var(--background-color);
+  padding: 0.5rem;
+}
+.letsTalk {
+  justify-items: center;
+}
+.img-work-container img {
+  background-color: var(--resume-background-color);
+  border-radius: 1.2rem;
+}
+
+/* Buttons in Home */
+.home_btn {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.btnHome {
+  align-items: center;
+  appearance: none;
+  background-color: var(--home-text-color);
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: 0.25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform, opacity;
+  z-index: 0;
+}
+
+.btnHome:hover {
+  background: var(--home-text-color);
+  color: var(--background-color);
+}
+
+.btnHome:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%),
+    0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.btnHome:focus {
+  outline: none;
+  border: 2px solid var(--background-color);
+}
+
+.btnHome:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
+    rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
+}
+
+.btnHome:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 2px 3px 0,
+    rgba(60, 64, 67, 0.15) 0 6px 10px 4px;
+}
+
+.btnHome:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
+    rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
+}
+
+.btnHome:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 4px 4px 0,
+    rgba(60, 64, 67, 0.15) 0 8px 12px 6px;
+}
+
+.btnHome:disabled {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
+    rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
+}
+
+.hireBtn {
+  align-items: center;
+  appearance: none;
+  background-color: #ffffff;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1),
+    background-color 100ms cubic-bezier(0.694, 0, 0.335, 1),
+    color 100ms cubic-bezier(0.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.hireBtn:before {
+  animation: opacityFallbackOut 0.5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #0ba1eb;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+    -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.hireBtn:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.hireBtn:after {
+  background-color: var(--background-color);
+}
+
+.hireBtn span {
+  z-index: 1;
+  position: relative;
+}
+
+/*------Background--------*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+.hero {
+  background-color: var(--background-color);
+  position: relative;
+  height: calc(110vh);
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero__title {
+  color: var(--home-text-color);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.cube {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px #c6cad2;
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  -webkit-animation: cube 12s ease-in forwards infinite;
+  animation: cube 12s ease-in forwards infinite;
+}
+.cube:nth-child(2n) {
+  border-color: #bec1c7;
+}
+.cube:nth-child(2) {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  left: 25vw;
+  top: 40vh;
+}
+.cube:nth-child(3) {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+  left: 75vw;
+  top: 50vh;
+}
+.cube:nth-child(4) {
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+  left: 90vw;
+  top: 10vh;
+}
+.cube:nth-child(5) {
+  -webkit-animation-delay: 8s;
+  animation-delay: 8s;
+  left: 10vw;
+  top: 85vh;
+}
+.cube:nth-child(6) {
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+  left: 50vw;
+  top: 10vh;
+}
+
+@-webkit-keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+/*----------Resume btns----------*/
+
+.btn {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid var(--home-text-color);
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: var(--home-text-color);
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  line-height: normal;
+  margin: 0;
+
+  min-width: 0;
+  outline: none;
+
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.btn:disabled {
+  pointer-events: none;
+}
+
+.btn:hover {
+  color: var(--background-color);
+  background-color: var(--home-text-color);
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-around;
+}
+/*---------------*/
+.profile_photo {
+  border-radius: 100%;
+}
+.title {
+  display: flex;
+}
+
+.hero__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
+section {
+  display: none;
+  padding: 0rem;
+}
+
+section.active {
+  display: block;
+  margin-top: 0rem; /* To push content below fixed header */
+}
+
+.my-hidden-element {
+  display: none;
+}
+
+.contact-top {
+  height: 80vh;
+}
+
+#admin h2 {
+  font-size: 2.5rem;
+}
+
+.formBtn {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.1) 0 6px 20px;
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 1rem;
+  outline: none;
+  padding: 0.5rem 0.8rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.formBtn:hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+
+/*---------------------------------Mobile-------------------------------*/
+@media (max-width: 480px) {
+  .hero {
+    height: calc(100vh - 1.25rem);
+  }
+
+  #hi {
+    color: aqua;
+    font-size: 2rem;
+  }
+
+  #name {
+    font-size: 3rem;
+  }
+  #developer {
+    font-size: 1rem;
+  }
+  #passion {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .home_btn {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .btnHome {
+    font-size: 1rem;
+  }
+
+  /*-----Dropdown Btn-----*/
+  .dropbtn {
+    background-color: var(--background-color);
+    color: var(--home-text-color);
+    padding: 0.35rem 0rem 0.35rem 0.75rem;
+    border: none;
+    cursor: pointer;
+    margin-right: 2rem;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--drop-down);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+
+  .dropdown-content a {
+    color: var(--drop-down-content);
+    padding: 0.25rem 0.25rem;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: var(--drop-down-hover);
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: var(--background-color);
+  }
+  /*------------*/
+  .profile_photo {
+    border-radius: 100%;
+    height: 7rem;
+    width: 7rem;
+    margin-right: 0.5rem;
+  }
+  .designation h1 {
+    font-size: 2rem;
+  }
+  .designation h2 {
+    font-size: 0.85rem;
+  }
+  .hero__title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    padding: 1.5rem;
+  }
+  .btn {
+    font-size: 0.6rem;
+    font-weight: 500;
+    min-height: 1.25rem;
+    padding: 0.3rem 0.5rem;
+  }
+  .description {
+    font-size: 0.75rem;
+  }
+
+  .description li {
+    border-bottom: var(--list-border) solid 0.12rem;
+    padding-bottom: 0.125rem;
+    margin-bottom: 0.125rem;
+  }
+
+  .container img {
+    height: 2rem;
+    margin-right: 1rem;
+  }
+
+  .myself,
+  .skills {
+    font-size: 1rem;
+  }
+  .volunteering h2 {
+    font-size: 1.25rem;
+  }
+  .volunteering h3 {
+    font-size: 0.75rem;
+  }
+  .volunteering h4 {
+    font-size: 0.6rem;
+  }
+  .volunteering .container {
+    justify-content: flex-start;
+  }
+
+  #my-work h2 {
+    font-size: 3rem;
+  }
+
+  .img-work-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+  }
+  .img-work-container img {
+    height: 10rem;
+  }
+  .img-work-container img:hover {
+    scale: 1.125;
+  }
+  .work h3 {
+    font-size: 1.25rem;
+    padding: 0.5rem;
+  }
+  .work a {
+    color: var(--home-text-color);
+    text-decoration: none;
+  }
+  .work button a {
+    color: var(--background-color);
+    padding: 0.5rem;
+  }
+  .youtube-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0.5rem;
+    column-gap: 2rem;
+  }
+
+  .video h1 {
+    font-size: 0.7rem;
+  }
+  .youtube-container img {
+    height: 5rem;
+  }
+  #books-image {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .letsTalk h1 {
+    font-size: 3rem;
+    padding: 0.5rem;
+  }
+  .letsTalk h2 {
+    padding: 0.5rem;
+    background-color: var(--resume-background-color);
+    border-radius: 1rem;
+  }
+  .letsTalk p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .contact-elements {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+  }
+  .my-hidden-element {
+  }
+  .my-hidden-element h1 {
+    font-size: 2rem;
+  }
+  .my-hidden-element h2 {
+    font-size: 1rem;
+  }
+  #admin h2 {
+    font-size: 3rem;
+  }
+  .options label {
+    font-size: 1rem;
+  }
+}
+
+/*-------------Tab------------*/
+@media (min-width: 481px) and (max-width: 768px) {
+  .hero {
+    height: calc(100vh - 1.25rem);
+  }
+
+  #hi {
+    font-size: 2rem;
+    color: #0077cc;
+  }
+  #name {
+    font-size: 4.5rem;
+  }
+
+  #passion {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /*-----Dropdown Btn-----*/
+  .dropbtn {
+    background-color: var(--background-color);
+    color: var(--home-text-color);
+    padding: 0.8rem 0.5rem 0.35rem 1.75rem;
+    margin-right: 3rem;
+    border: none;
+    cursor: pointer;
+    scale: 1.5;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    padding-bottom: 0.75rem;
+    border-bottom: var(--background-color);
+    background-color: var(--drop-down);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+
+  .dropdown-content a {
+    color: var(--drop-down-content);
+    padding: 0.25rem 0.25rem;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: var(--drop-down-hover);
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+    scale: 1.2;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: var(--background-color);
+  }
+  /*------------*/
+  .profile_photo {
+    border-radius: 100%;
+    height: 8rem;
+    width: 8rem;
+    margin-right: 0.5rem;
+  }
+  .designation {
+    padding: 0rem 5rem 1.25rem 1.5rem;
+  }
+  .designation h1 {
+    font-size: 2.5rem;
+  }
+  .designation h2 {
+    font-size: 1rem;
+  }
+  .hero__title {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  .btn {
+    font-size: 0.85rem;
+    font-weight: 500;
+    min-height: 1.25rem;
+    padding: 0.3rem 0.5rem;
+  }
+
+  .description li {
+    padding: 0.125rem;
+    border-bottom: rgb(39, 35, 45) solid 0.125rem;
+  }
+
+  .container img {
+    height: 1.5rem;
+    margin: 0.25rem 1.75rem 0.25rem 0.5rem;
+  }
+
+  .myself,
+  .skills {
+    font-size: 1rem;
+  }
+  .volunteering h2 {
+    font-size: 1rem;
+  }
+  .volunteering h3 {
+    font-size: 1rem;
+  }
+  .volunteering h4 {
+    font-size: 0.6rem;
+  }
+
+  .education h2,
+  .experience h2 {
+    font-size: 1.25rem;
+  }
+  #my-work h2 {
+    font-size: 4rem;
+  }
+
+  .img-work-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-work-container img {
+    height: 20rem;
+    background-color: var(--resume-background-color);
+    border-radius: 1.2rem;
+  }
+  .img-work-container img:hover {
+    scale: 1.2;
+  }
+  .work h3 {
+    font-size: 1.5rem;
+    padding: 0.75rem;
+  }
+  .work a {
+    color: var(--home-text-color);
+    text-decoration: none;
+  }
+  .work button a {
+    color: var(--background-color);
+    padding: 0.5rem;
+  }
+  .youtube-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1.5rem;
+    column-gap: 2rem;
+  }
+
+  .video h1 {
+    font-size: 1rem;
+  }
+  .youtube-container img {
+    height: 6.8rem;
+  }
+  #books-image {
+    width: 50%;
+  }
+  .books-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .letsTalk h1 {
+    font-size: 5rem;
+    padding: 0.75rem;
+  }
+  .letsTalk h2 {
+    font-size: 2rem;
+    padding: 0.5rem;
+    background-color: var(--resume-background-color);
+  }
+  .letsTalk p {
+    font-size: 1.5rem;
+  }
+
+  .contact-elements {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    scale: 1.8;
+  }
+  .my-hidden-element h1 {
+    font-size: 3rem;
+  }
+  .my-hidden-element h2 {
+    font-size: 1rem;
+  }
+  #admin h2 {
+    font-size: 3rem;
+  }
+  .options label {
+    font-size: 1.5rem;
+  }
+}
+/*-------------Desktop------------*/
+@media (min-width: 769px) {
+  .dropbtn {
+    display: none;
+  }
+  .btn {
+    font-size: 1.25rem;
+    font-weight: 650;
+    min-height: 1.5rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .dropdown-content {
+    display: flex;
+    flex-shrink: 3;
+    gap: 1rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    padding: 0.7rem;
+    background-color: #ceced2;
+    border-radius: 0.75rem;
+    z-index: 1000;
+  }
+
+  .dropdown-content a {
+    color: var(--drop-down-content);
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-family: -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+      "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-weight: 800;
+  }
+  .dropdown-content a:hover {
+    background-color: var(--background-color);
+    color: var(--home-text-color);
+  }
+
+  .dropdown-content a:active {
+    background-color: #5678e8;
+    color: var(--home-text-color);
+  }
+
+  #hi {
+    font-size: 3rem;
+    color: #99e140;
+  }
+  #name {
+    font-size: 7rem;
+    font-weight: 900;
+  }
+  #developer {
+    font-size: 1.75rem;
+  }
+
+  #passion {
+    margin: 1.75rem;
+  }
+
+  .profile_photo {
+    border-radius: 100%;
+    height: 10rem;
+    width: 10rem;
+  }
+  .designation {
+    padding: 0rem 5rem 1.25rem 1.5rem;
+  }
+  .designation h1 {
+    font-size: 4rem;
+  }
+  .designation h2 {
+    font-size: 1rem;
+  }
+
+  .description li {
+    padding: 0.125rem;
+    border-bottom: rgb(39, 35, 45) solid 0.125rem;
+  }
+
+  .container img {
+    height: 1.5rem;
+    margin: 0.25rem 1.75rem 0.25rem 0.5rem;
+  }
+
+  .myself,
+  .skills {
+    font-size: 1rem;
+  }
+  .volunteering h2 {
+    font-size: 1.25rem;
+  }
+  .volunteering h3 {
+    font-size: 0.75rem;
+  }
+  .volunteering h4 {
+    font-size: 0.6rem;
+  }
+
+  .education h2,
+  .experience h2 {
+    font-size: 1.25rem;
+  }
+
+  #my-work h2 {
+    font-size: 5rem;
+  }
+
+  .img-work-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  .img-work-container img {
+    height: 38rem;
+  }
+  .img-work-container img:hover {
+    scale: 1.1;
+  }
+  .work h3 {
+    font-size: 2rem;
+    padding: 0.5rem;
+    background-color: var(--resume-background-color);
+    border-radius: 2rem;
+    margin-top: 1.7rem;
+    margin-bottom: 0.2rem;
+  }
+  .work a {
+    color: var(--home-text-color);
+    text-decoration: none;
+  }
+  .work button a {
+    color: var(--home-text-color);
+    padding: 1rem;
+  }
+
+  .work button {
+    --b: 3px; /* border thickness */
+    --s: 0.45em; /* size of the corner */
+
+    padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
+    color: var(--home-text-color);
+    --_p: var(--s);
+    background: conic-gradient(
+        from 90deg at var(--b) var(--b),
+        #0000 90deg,
+        var(--home-text-color) 0
+      )
+      var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+      calc(100% - var(--b) - 2 * var(--_p));
+    transition: 0.3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: 0.6em;
+    font-size: 16px;
+
+    border: 0;
+
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  .work button:hover,
+  .work button:focus-visible {
+    --_p: 0px;
+    outline-color: var(--home-text-color);
+    outline-offset: 0.05em;
+  }
+
+  .work button:active {
+    background: var(--home-text-color);
+    color: #fff;
+  }
+  #travel h2 {
+    color: var(--home-text-color);
+  }
+  .youtube-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1.5rem;
+    column-gap: 1rem;
+  }
+
+  .video h1 {
+    font-size: 1rem;
+  }
+  .youtube-container img {
+    height: 8rem;
+  }
+  #books-image {
+    width: 45%;
+  }
+  .books-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .letsTalk h1 {
+    font-size: 5rem;
+    padding: 0.75rem;
+  }
+  .letsTalk h2 {
+    font-size: 2rem;
+  }
+  .letsTalk p {
+    font-size: 1.5rem;
+  }
+
+  .contact-elements {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    scale: 1.8;
+  }
+  .my-hidden-element h1 {
+    font-size: 3rem;
+  }
+  .my-hidden-element h2 {
+    font-size: 1rem;
+  }
+  #admin h2 {
+    font-size: 4rem;
+  }
+  .options label {
+    font-size: 1.5rem;
+  }
+}
+
+/*----Contact Us-----*/
+.background {
+  display: flex;
+  min-height: 60vh;
+}
+
+.container-contact-me {
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 10px;
+}
+
+.screen {
+  position: relative;
+  background: #3e3e3e;
+  border-radius: 15px;
+}
+
+.screen:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.screen-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: #4d4d4f;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.screen-header-left {
+  margin-right: auto;
+}
+
+.screen-header-button {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  border-radius: 8px;
+  background: white;
+}
+
+.screen-header-button.close {
+  background: #ed1c6f;
+}
+
+.screen-header-button.maximize {
+  background: #e8e925;
+}
+
+.screen-header-button.minimize {
+  background: #74c54f;
+}
+
+.screen-header-right {
+  display: flex;
+}
+
+.screen-header-ellipsis {
+  width: 3px;
+  height: 3px;
+  margin-left: 2px;
+  border-radius: 8px;
+  background: #999;
+}
+
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #ea1d6f;
+  font-size: 26px;
+}
+
+.app-title:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 25px;
+  height: 4px;
+  background: #ea1d6f;
+}
+
+.app-contact {
+  margin-top: auto;
+  font-size: 8px;
+  color: #888;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.app-form-control::placeholder {
+  color: #666;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: #ea1d6f;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.app-form-button:hover {
+  color: #b9134f;
+}
+
+.credits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  color: #ffa4bd;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.credits-link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.dribbble {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 520px) {
+  .screen-body {
+    flex-direction: column;
+  }
+
+  .screen-body-item.left {
+    margin-bottom: 30px;
+  }
+
+  .app-title {
+    flex-direction: row;
+  }
+
+  .app-title span {
+    margin-right: 12px;
+  }
+
+  .app-title:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .screen-body {
+    padding: 40px;
+  }
+
+  .screen-body-item {
+    padding: 0;
+  }
+}
