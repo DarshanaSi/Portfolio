@@ -250,26 +250,58 @@ cancel.addEventListener("click", (e) => {
   contactTop.style.display = "block" ? "block" : "none";
 });
 
-//LinkedIn Data🤩
-const accessToken =
-  "AQXRbWM3k7iwU3AUZS-BnPUrJgTVj7eOXkmR3MdJIRz2mEI_1E016iMbNZQWbKNSXgOauQj6JeLahNAHJ5gBhuL4H2XaEUDQ4yvmNtJK9Ugsq0sblZGsLRbMWgs0EGRNl7o36_5SGQ0WOEwTAVUEoFZy8JhlpFPEu7LQz2FI5SC7eVDphSQCLgQ_z6oxnYOjU0BKZeHlDnNph9To8JXzYmBkwrr8Er6V-J7ZixL1BRU5LuGlmZIGL__ktqcF4SCqscodRcVDaHMTKr0SQUTpJsLQyBVAva3OixOG7-nKygF9XmaTD23ABDHYlC7MewpmC3xFiJSf4LQW6j_aPMwUngPqA_EYOA";
-const apiUrl = "https://api.linkedin.com/v2/me";
-const proxyUrl = "https://cors-anywhere.herokuapp.com/";
+//POST
+const nameInput = document.querySelector('input[placeholder="NAME"]');
+const emailInput = document.querySelector('input[placeholder="EMAIL"]');
+const contactInput = document.querySelector('input[placeholder="CONTACT NO"]');
+const messageInput = document.querySelector('input[placeholder="MESSAGE"]');
 
-const headers = new Headers({
-  Authorization: `Bearer ${accessToken}`,
-  "Content-Type": "application/json",
+const sendButton = document.querySelector(
+  ".buttons .app-form-button:last-of-type"
+);
+
+sendButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  const xhr = new XMLHttpRequest();
+  xhr.open("POST", "https://example.com/contact", true);
+  xhr.setRequestHeader("Content-Type", "application/json");
+  const data = {
+    name: nameInput.value,
+    email: emailInput.value,
+    contact: contactInput.value,
+    message: messageInput.value,
+  };
+  const json = JSON.stringify(data);
+  xhr.send(json);
+  nameInput.value = "";
+  emailInput.value = "";
+  contactInput.value = "";
+  messageInput.value = "";
+  hiddenElement.style.display = "none";
+  contactTop.style.display = "block";
+  alert("Message sent successfully!");
 });
 
-const options = {
-  method: "GET",
-  headers: headers,
-  mode: "cors",
-};
+//LinkedIn Data🤩
+// const accessToken =
+//   "AQXRbWM3k7iwU3AUZS-BnPUrJgTVj7eOXkmR3MdJIRz2mEI_1E016iMbNZQWbKNSXgOauQj6JeLahNAHJ5gBhuL4H2XaEUDQ4yvmNtJK9Ugsq0sblZGsLRbMWgs0EGRNl7o36_5SGQ0WOEwTAVUEoFZy8JhlpFPEu7LQz2FI5SC7eVDphSQCLgQ_z6oxnYOjU0BKZeHlDnNph9To8JXzYmBkwrr8Er6V-J7ZixL1BRU5LuGlmZIGL__ktqcF4SCqscodRcVDaHMTKr0SQUTpJsLQyBVAva3OixOG7-nKygF9XmaTD23ABDHYlC7MewpmC3xFiJSf4LQW6j_aPMwUngPqA_EYOA";
+// const apiUrl = "https://api.linkedin.com/v2/me";
+// const proxyUrl = "https://cors-anywhere.herokuapp.com/";
 
-const finalUrl = proxyUrl + apiUrl;
+// const headers = new Headers({
+//   Authorization: `Bearer ${accessToken}`,
+//   "Content-Type": "application/json",
+// });
 
-fetch(finalUrl, options)
-  .then((response) => response.json())
-  .then((data) => console.log(data.localizedFirstName))
-  .catch((error) => console.error(error));
+// const options = {
+//   method: "GET",
+//   headers: headers,
+//   mode: "cors",
+// };
+
+// const finalUrl = proxyUrl + apiUrl;
+
+// fetch(finalUrl, options)
+//   .then((response) => response.json())
+//   .then((data) => console.log(data.localizedFirstName))
+//   .catch((error) => console.error(error));
